@@ -28,6 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribiruno"
                 android:text="1" />
 
             <Button
@@ -35,6 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirdos"
                 android:text="2" />
 
             <Button
@@ -42,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirtres"
                 android:text="3" />
 
             <Button
@@ -49,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+
                 android:text="X" />
         </TableRow>
 
@@ -62,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribircuatro"
                 android:text="4" />
 
             <Button
@@ -69,6 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribircinco"
                 android:text="5" />
 
             <Button
@@ -76,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirseis"
                 android:text="6" />
 
             <Button
@@ -96,6 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirsiete"
                 android:text="7" />
 
             <Button
@@ -103,6 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirocho"
                 android:text="8" />
 
             <Button
@@ -110,6 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribirnueve"
                 android:text="9" />
 
             <Button
@@ -130,6 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="escribircero"
                 android:text="0" />
 
             <Button
@@ -137,6 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="limpiar"
                 android:text="C" />
 
             <Button
