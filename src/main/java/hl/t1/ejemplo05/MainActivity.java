@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+//Raul Antonio Serra 2º DAM
 public class MainActivity extends AppCompatActivity {
     EditText resultado;
     double n1=0;

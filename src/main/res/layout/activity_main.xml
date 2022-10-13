@@ -24,12 +24,14 @@
             android:layout_weight="1">
 
             <Button
+                android:background="@drawable/botonstyle"
                 android:id="@+id/btnf"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="limpiar"
+                android:textSize="25dp"
                 android:text="C" />
 
             <Button
@@ -39,6 +41,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="restart"
+                android:textSize="25dp"
+                android:background="@drawable/botonstyle"
                 android:text="CE" />
 
             <Button
@@ -48,6 +52,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="restar"
+                android:textSize="25dp"
+                android:background="@drawable/botonstyle"
                 android:text="-" />
 
         </TableRow>
@@ -65,6 +71,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribiruno"
                 android:text="1"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -75,6 +82,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirdos"
                 android:text="2"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -85,6 +93,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirtres"
                 android:text="3"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -94,6 +103,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="dividir"
+                android:textSize="25dp"
+                android:background="@drawable/botonstyle"
                 android:text="/" />
         </TableRow>
 
@@ -110,6 +121,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribircuatro"
                 android:text="4"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -120,6 +132,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribircinco"
                 android:text="5"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -130,6 +143,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirseis"
                 android:text="6"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -139,6 +153,8 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="sumar"
+                android:background="@drawable/botonstyle"
+                android:textSize="25dp"
                 android:text="+" />
 
         </TableRow>
@@ -156,6 +172,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirsiete"
                 android:text="7"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -166,6 +183,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirocho"
                 android:text="8"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -176,6 +194,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribirnueve"
                 android:text="9"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -185,7 +204,9 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="multiplicar"
-                android:text="X" />
+                android:background="@drawable/botonstyle"
+                android:textSize="25dp"
+                android:text="*" />
 
 
         </TableRow>
@@ -202,6 +223,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribircero"
                 android:text="0"
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -212,6 +234,7 @@
                 android:backgroundTint="#000000"
                 android:onClick="escribircoma"
                 android:text="."
+                android:textSize="25dp"
                 android:textColor="@color/white" />
 
             <Button
@@ -221,6 +244,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="#F9AD29"
                 android:onClick="igual"
+                android:background="@drawable/botonstyle"
                 android:text="=" />
 
         </TableRow>
