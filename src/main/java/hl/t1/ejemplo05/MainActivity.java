@@ -2,6 +2,7 @@ package hl.t1.ejemplo05;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,16 +10,17 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText resultado;
-    int n1=0;
-    int n2=0;
-    int result;
+    double n1=0;
+    double n2=0;
+    double result;
+    TextView pastResult;
     String operador;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         resultado=findViewById(R.id.etVisor);
-
+        pastResult=findViewById(R.id.txtPast);
     }
 
 
@@ -66,37 +68,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void multiplicar(View view) {
-        n1=Integer.parseInt(resultado.getText().toString());
+        n1=Double.parseDouble(resultado.getText().toString());
+        pastResult.setText(String.valueOf(n1));
         resultado.setText("");
         operador="*";
     }
 
     public void dividir(View view) {
-        n1=Integer.parseInt(resultado.getText().toString());
+        n1=Double.parseDouble(resultado.getText().toString());
+        pastResult.setText(String.valueOf(n1));
         resultado.setText("");
         operador="/";
     }
 
     public void sumar(View view) {
         operador="+";
-        if(resultado.getText()!=null){
-            n1=Integer.parseInt(resultado.getText().toString());
-            resultado.setText("");
-
-        }else{
-            resultado.setText(0);
+        n1=Double.parseDouble(resultado.getText().toString());
+        pastResult.setText(String.valueOf(n1));
+        resultado.setText("");
         }
 
-    }
+
 
     public void restar(View view) {
-        n1=Integer.parseInt(resultado.getText().toString());
+        n1=Double.parseDouble(resultado.getText().toString());
+        pastResult.setText(String.valueOf(n1));
         resultado.setText("");
         operador="-";
     }
 
     public void igual(View view) {
-        n2=Integer.parseInt(resultado.getText().toString());
+        n2=Double.parseDouble(resultado.getText().toString());
         result=0;
         switch (operador){
             default:
@@ -114,8 +116,8 @@ public class MainActivity extends AppCompatActivity {
                 result=n1/n2;
                 break;
         }
-
-        resultado.setText(Integer.toString(result));
+        pastResult.setText(String.valueOf(result));
+        resultado.setText(String.valueOf(result));
 
     }
 
@@ -124,5 +126,18 @@ public class MainActivity extends AppCompatActivity {
         n1=0;
         n2=0;
         resultado.setText("");
+        pastResult.setText("");
+    }
+
+    public void escribircoma(View view) throws InterruptedException {
+        if(resultado.getText().toString().contains(".")){
+
+        }
+        else{
+            resultado.setText(resultado.getText().toString()+".");
+
+        }
+
+
     }
 }

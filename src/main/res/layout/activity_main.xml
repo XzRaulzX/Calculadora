@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="377dp"
-        android:layout_height="401dp"
-        android:layout_marginTop="314dp"
+        android:layout_width="356dp"
+        android:layout_height="410dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,34 +24,11 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btn1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribiruno"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/btn2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirdos"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/btn3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirtres"
-                android:text="3" />
-
-            <Button
                 android:id="@+id/btnf"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
                 android:onClick="limpiar"
                 android:text="C" />
 
@@ -60,120 +37,189 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
                 android:onClick="restart"
                 android:text="CE" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btn12"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribircuatro"
-                android:text="4" />
-
-            <Button
-                android:id="@+id/btn5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribircinco"
-                android:text="5" />
-
-            <Button
-                android:id="@+id/btn6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirseis"
-                android:text="6" />
-
-            <Button
-                android:id="@+id/btnf2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="dividir"
-                android:text="/" />
-
-            <Button
-                android:id="@+id/btnf3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="sumar"
-                android:text="+" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
-
-            <Button
-                android:id="@+id/btn7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirsiete"
-                android:text="7" />
-
-            <Button
-                android:id="@+id/btn8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirocho"
-                android:text="8" />
-
-            <Button
-                android:id="@+id/btn9"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:onClick="escribirnueve"
-                android:text="9" />
 
             <Button
                 android:id="@+id/btnf4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
                 android:onClick="restar"
                 android:text="-" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribiruno"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirdos"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirtres"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnf2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
+                android:onClick="dividir"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribircuatro"
+                android:text="4"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribircinco"
+                android:text="5"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirseis"
+                android:text="6"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnf3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
+                android:onClick="sumar"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirsiete"
+                android:text="7"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirocho"
+                android:text="8"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribirnueve"
+                android:text="9"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btnf1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
                 android:onClick="multiplicar"
                 android:text="X" />
-        </TableRow>
 
+
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" >
+            android:layout_weight="1">
 
             <Button
                 android:id="@+id/btn11"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#000000"
                 android:onClick="escribircero"
-                android:text="0" />
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btndouble"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:onClick="escribircoma"
+                android:text="."
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btnf5"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:backgroundTint="#F9AD29"
                 android:onClick="igual"
                 android:text="=" />
 
@@ -182,12 +228,14 @@
 
     <EditText
         android:id="@+id/etVisor"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="358dp"
+        android:layout_height="156dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="23dp"
         android:layout_marginBottom="21dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:hint="@string/etVisor"
         android:inputType="number"
@@ -195,6 +243,24 @@
         android:textSize="96sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/txtPast"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textAlignment="textEnd"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016" />
+
 </android.support.constraint.ConstraintLayout>
