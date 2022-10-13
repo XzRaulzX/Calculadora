@@ -5,40 +5,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText resultado;
+    int n1=0;
+    int n2=0;
+    int result;
+    String operador;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button btnmult=findViewById(R.id.btnf1);
-        Button btndiv=findViewById(R.id.btnf2);
-        Button btnsum=findViewById(R.id.btnf3);
-        Button btnrest=findViewById(R.id.btnf4);
-        Button btnReiniciar=findViewById(R.id.btnf5);
         resultado=findViewById(R.id.etVisor);
 
     }
 
 
-    public int suma(int a,int b){
-        return a+b;
-    }
-    public int resta(int a,int b){
-        return a-b;
-    }
-    public int dividir(int a,int b){
-        return a/b;
-    }
-
-    public int multiplicacion(int a,int b){
-        return a*b;
-    }
 
     public void limpiar(View view) {
-        resultado.setText("0");
+        resultado.setText("");
     }
     public void escribiruno(View view) {
         resultado.setText(resultado.getText().toString()+"1");
@@ -79,4 +65,64 @@ public class MainActivity extends AppCompatActivity {
         resultado.setText(resultado.getText().toString()+"0");
     }
 
+    public void multiplicar(View view) {
+        n1=Integer.parseInt(resultado.getText().toString());
+        resultado.setText("");
+        operador="*";
+    }
+
+    public void dividir(View view) {
+        n1=Integer.parseInt(resultado.getText().toString());
+        resultado.setText("");
+        operador="/";
+    }
+
+    public void sumar(View view) {
+        operador="+";
+        if(resultado.getText()!=null){
+            n1=Integer.parseInt(resultado.getText().toString());
+            resultado.setText("");
+
+        }else{
+            resultado.setText(0);
+        }
+
+    }
+
+    public void restar(View view) {
+        n1=Integer.parseInt(resultado.getText().toString());
+        resultado.setText("");
+        operador="-";
+    }
+
+    public void igual(View view) {
+        n2=Integer.parseInt(resultado.getText().toString());
+        result=0;
+        switch (operador){
+            default:
+                break;
+            case "+":
+                result=n1+n2;
+                break;
+            case "-":
+                result=n1-n2;
+                break;
+            case "*":
+                result=n1*n2;
+                break;
+            case "/":
+                result=n1/n2;
+                break;
+        }
+
+        resultado.setText(Integer.toString(result));
+
+    }
+
+
+    public void restart(View view) {
+        n1=0;
+        n2=0;
+        resultado.setText("");
+    }
 }

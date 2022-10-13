@@ -48,12 +48,20 @@
                 android:text="3" />
 
             <Button
-                android:id="@+id/btnf1"
+                android:id="@+id/btnf"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="limpiar"
+                android:text="C" />
 
-                android:text="X" />
+            <Button
+                android:id="@+id/btnf6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="restart"
+                android:text="CE" />
         </TableRow>
 
         <TableRow
@@ -90,7 +98,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:onClick="dividir"
                 android:text="/" />
+
+            <Button
+                android:id="@+id/btnf3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="sumar"
+                android:text="+" />
         </TableRow>
 
         <TableRow
@@ -123,11 +140,20 @@
                 android:text="9" />
 
             <Button
-                android:id="@+id/btnf3"
+                android:id="@+id/btnf4"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="+" />
+                android:onClick="restar"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btnf1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="multiplicar"
+                android:text="X" />
         </TableRow>
 
         <TableRow
@@ -148,15 +174,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="limpiar"
-                android:text="C" />
+                android:onClick="igual"
+                android:text="=" />
 
-            <Button
-                android:id="@+id/btnf4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="-" />
         </TableRow>
     </TableLayout>
 
